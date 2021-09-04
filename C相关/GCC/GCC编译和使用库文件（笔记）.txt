@@ -1,0 +1,29 @@
+1. gcc main.c -o main.exe: 直接生成名为main.exe的可执行二进制文件
+2.gcc“编译”的过程分为4步：预处理（#define,#include,/**/）--编译（翻译成汇编代码文件）--汇编（翻译成机器代码，此时是二进制码）--链接（可执行二进制文件）
+3.gcc -E main.c -o main.i :生成预处理后的文件
+4.gcc -S main.c -o main.s 或者 gcc -S main.i -o main.s : 生成编译后的汇编代码文件
+5.gcc -c main.c -o main.o 或者gcc -c main.i -o main.o 或者 gcc -c main.s -o main.o：生成机器代码文件，一般称作目标文件（objective）
+6.gcc main.o -o main.exe :链接， 执行：./maim.exe
+
+
+7.创建和使用静态链接库，此时代码目录为：test/bin:放可执行文件；test/include：放头文件；test/lib放库文件；test/src放源文件
+在../include中写test.h头文件声明这三个函数。
+cd src；
+vim add.c sub.c div.c 写三个源文件，实行加减除功能。并包含#include "test.h"。
+gcc -c *.c -I ../include 编译生成目标文件add.o sub.o div.o
+ar rcs libtest.a *.o  将.o文件打包成静态链接库
+
+将生成的libtest.a放入../lib
+使用静态链接库时需要库文件，新建main.c文件，其中包含#include"test.h"
+编译main.c：gcc src/main.c -I ../include -L ../lib -l test -o main.exe
+
+8.创建和使用动态链接库
+
+gcc -fPIC -c add.c div.c sub.c -I ../include：编译生成目标文件， -fPIC代表与位置无关，即没有绝对地址，因为动态库要加载到内存中
+gcc -shared add.o div.o sub.o -o libtest.so: 打包动态库
+
+将生成的libtest.a放入../lib
+使用静态链接库时需要库文件，新建main.c文件，其中包含#include"test.h"
+编译main.c：gcc src/main.c -I ../include -L ../lib -l test -o main.exe
+运行 ./main.exe：出现错误./math_d.exe: error while loading shared libraries: libtest_d.so: cannot open shared object file: No such file or directory
+export LD_LIBRARY_PATH=../lib：搜索不到动态库，添加环境变量
