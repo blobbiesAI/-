@@ -1,0 +1,8 @@
+cat命令是linux下的一个文本输出命令，通常是用于观看某个文件的内容的；
+
+cat filename:显示文件
+cat > filename:创建一个文件，并在命令行里输入内容
+cat file1 file2 >file3：将几个文件合并为一个文件
+cat -n file1 >file2:把file1的文档内容加上行号后输入到file2
+cat -b file1 file2 >>file3:把file1和file2文档内容加上行号（空白行不加），将内容加到file3里
+cat /dev/null >file1:清空文件内容

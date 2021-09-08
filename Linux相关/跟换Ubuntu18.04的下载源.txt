@@ -1,0 +1,13 @@
+源地址存在文件 /etc/apt/sources.list
+
+首先备份：
+cp /etc/apt/sources.list /etc/apt/sources.list.bak
+
+修改sources.list:
+更改文件权限使其可编辑   chmod 777 filename
+打开文件编辑
+删除原来内容，复制国内源（比如阿里源）
+
+更新
+sudo apt-get update
+sudo apt-get upgrade

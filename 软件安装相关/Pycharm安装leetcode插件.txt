@@ -1,0 +1,16 @@
+1. File-->setting-->plugins-->marketplace
+输入 leetcode,
+安装 leetcode editor
+
+2.File-->setting-->tools-->leetcode plugin
+配置用户名、密码和文件存储位置等
+
+3. 点击右下角 leetcode
+显示登陆失败，要求cookie登陆
+
+4. 获取leetcode.com网站的cookie。
+   登陆网页版leetcode.com;
+   F12打开开发者工具，点击XHR；
+   点击网页上一按钮；
+   点击下方 all；
+   在标头处往下拉，找到cookie，复制。 

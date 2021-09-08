@@ -1,0 +1,4 @@
+Ubuntu 查看发行版本号，发行版(distro)的英文原文是distribution,是内核和应用程序的集合.一个典型的Linux发行版包括：Linux内核，一些GNU程序库和工具，命令行shell,也会包含图形界面。
+终端输入：Uname -a
+得到：Linux ubuntu 5.4.0-80-generic #90~18.04.1-Ubuntu SMP Tue Jul 13 19:40:02 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+其中GNU是一个操作系统项目名称，目的是开发一个免费开源的类Unix系统。但项目一直卡在操作系统内核上，正好Linux内核横空出世，于是两者一组合，诞生了GNU/Linux。
