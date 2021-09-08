@@ -1,0 +1,164 @@
+do nothing
+[Modelarts Service Log]user: uid=1101(work) gid=1101(work) groups=1101(work),1000(HwHiAiUser)
+[Modelarts Service Log]pwd: /home/work
+[Modelarts Service Log]app_url: s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/code/
+[Modelarts Service Log]boot_file: code/train.py
+[Modelarts Service Log]log_url: /tmp/log/MA-FaceDetection-08-12-16-14.log
+[Modelarts Service Log]command: code/train.py --data_url=s3://yolov3-test2/widerface/ --train_url=s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/output/V0017/
+[Modelarts Service Log]local_code_dir: 
+[Modelarts Service Log]Training start at 2021-08-13-12:08:31
+[Modelarts Service Log][modelarts_create_log] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[Modelarts Service Log]handle inputs of training job
+INFO:root:Using MoXing-v2.0.0.rc0.edc4eece-edc4eece
+INFO:root:Using OBS-Python-SDK-3.20.9.1
+[ModelArts Service Log][INFO][2021/08/13 12:08:32]: env MA_INPUTS is not found, skip the inputs handler
+ln: failed to create symbolic link '/home/work/modelarts/outputs': No such file or directory
+INFO:root:Using MoXing-v2.0.0.rc0.edc4eece-edc4eece
+INFO:root:Using OBS-Python-SDK-3.20.9.1
+[ModelArts Service Log]2021-08-13 12:08:32,955 - modelarts-downloader.py[line:623] - INFO: Main: modelarts-downloader starting with Namespace(dst='./', recursive=True, skip_creating_dir=False, src='s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/code/', trace=False, type='common', verbose=False)
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+[ModelArts Service Log]modelarts-pipe: total length: 24
+/home/work/user-job-dir
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+INFO:root:Using MoXing-v2.0.0.rc0.edc4eece-edc4eece
+INFO:root:Using OBS-Python-SDK-3.20.9.1
+[Modelarts Service Log]2021-08-13 12:08:34,593 - INFO - background upload stdout log to s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/log/jobbbf72e33-job-ma-facedetection-08-0.log
+[Modelarts Service Log]2021-08-13 12:08:34,603 - INFO - Ascend Driver: Version=20.2.0
+[Modelarts Service Log]2021-08-13 12:08:34,604 - INFO - you are advised to use ASCEND_DEVICE_ID env instead of DEVICE_ID, as the DEVICE_ID env will be discarded in later versions
+[Modelarts Service Log]2021-08-13 12:08:34,604 - INFO - particularly, ${ASCEND_DEVICE_ID} == ${DEVICE_ID}, it's the logical device id
+[Modelarts Service Log]2021-08-13 12:08:34,604 - INFO - Davinci training command
+[Modelarts Service Log]2021-08-13 12:08:34,604 - INFO - ['/usr/bin/python', '/home/work/user-job-dir/code/train.py', '--data_url=s3://yolov3-test2/widerface/', '--train_url=s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/output/V0017/']
+[Modelarts Service Log]2021-08-13 12:08:34,604 - INFO - Wait for Rank table file ready
+[Modelarts Service Log]2021-08-13 12:08:34,605 - INFO - Rank table file (K8S generated) is ready for read
+[Modelarts Service Log]2021-08-13 12:08:34,605 - INFO - 
+{
+    "status": "completed",
+    "group_count": "1",
+    "group_list": [
+        {
+            "group_name": "job-ma-facedetection-08",
+            "device_count": "1",
+            "instance_count": "1",
+            "instance_list": [
+                {
+                    "pod_name": "jobbbf72e33-job-ma-facedetection-08-0",
+                    "server_id": "192.168.0.242",
+                    "devices": [
+                        {
+                            "device_id": "6",
+                            "device_ip": "192.3.145.93"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2021-08-13 12:08:34,605 - INFO - Rank table file (C7x)
+[Modelarts Service Log]2021-08-13 12:08:34,605 - INFO - 
+{
+    "status": "completed",
+    "version": "1.0",
+    "server_count": "1",
+    "server_list": [
+        {
+            "server_id": "192.168.0.242",
+            "device": [
+                {
+                    "device_id": "6",
+                    "device_ip": "192.3.145.93",
+                    "rank_id": "0"
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2021-08-13 12:08:34,606 - INFO - Rank table file (C7x) is generated
+[Modelarts Service Log]2021-08-13 12:08:34,606 - INFO - Current server
+[Modelarts Service Log]2021-08-13 12:08:34,606 - INFO - 
+{
+    "server_id": "192.168.0.242",
+    "device": [
+        {
+            "device_id": "6",
+            "device_ip": "192.3.145.93",
+            "rank_id": "0"
+        }
+    ]
+}
+[Modelarts Service Log]2021-08-13 12:08:34,607 - INFO - bootstrap proc-rank-0-device-0
+[Modelarts Service Log]2021-08-13 12:08:34,618 - INFO - proc-rank-0-device-0 (pid: 106)
+[EVENT] PROFILING(106,python):2021-08-13-12:08:35.074.588 [msprof_callback_impl.cpp:151] >>> (tid:106) Started to register profiling callbacks to acl
+[EVENT] PROFILING(106,python):2021-08-13-12:08:35.110.290 [msprof_callback_impl.cpp:151] >>> (tid:106) Started to register profiling callbacks to acl
+[EVENT] PROFILING(106,python):2021-08-13-12:08:35.234.560 [msprof_callback_impl.cpp:151] >>> (tid:106) Started to register profiling callbacks to acl
+{'run_platform': 'run platform, support Ascend and CPU.', 'mindrecord_path': 'dataset path, e.g. /home/data.mindrecord', 'pretrained': 'pretrained model to load', 'local_rank': 'current rank to support distributed', 'use_loss_scale': 'Whether use dynamic loss scale, default is True.'}
+from path:  s3://yolov3-test2/widerface/
+to path:  /cache/data
+===finish data synchronization===
+===save flag===
+Finish sync data from s3://yolov3-test2/widerface/ to /cache/data.
+Dataset downloaded:  ['face_detect_dataset.zip']
+from path:  s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/output/V0017/
+to path:  /cache/train
+INFO:root:No files to copy.
+===finish data synchronization===
+===save flag===
+Finish sync data from s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/output/V0017/ to /cache/train.
+Workspace downloaded:  []
+Zip file path:  /cache/data/face_detect_dataset.zip
+Unzip file save dir:  /cache/data
+Extract Start...
+unzip file num: 4
+unzip percent: 0%
+unzip percent: 25%
+unzip percent: 50%
+unzip percent: 75%
+cost time: 0min:11s.
+Extract Done.
+===Finish extract data synchronization===
+Device: 0, Finish sync unzip data from /cache/data/face_detect_dataset.zip to /cache/data.
+config.outputs_dir /cache/train/output/2021-08-13_time_12_09_02
+=============yolov3 start trainging==================
+2021-08-13 12:09:02,735:INFO:start create dataloader
+Traceback (most recent call last):
+  File "/home/work/user-job-dir/code/train.py", line 217, in <module>
+    run_train()
+  File "/cache/user-job-dir/code/model_utils/moxing_adapter.py", line 105, in wrapped_func
+    run_func(*args, **kwargs)
+  File "/home/work/user-job-dir/code/train.py", line 133, in run_train
+    ds = create_dataset(config)######
+  File "/cache/user-job-dir/code/src/data_preprocess.py", line 268, in create_dataset
+    args.steps_per_epoch = ds.get_dataset_size()#Return the number of batches in an epoch
+  File "/usr/local/ma/python3.7/lib/python3.7/site-packages/mindspore/dataset/engine/datasets.py", line 1499, in get_dataset_size
+    self.dataset_size = runtime_getter[0].GetDatasetSize(False)
+RuntimeError: Thread ID 281473034553936 Unexpected error. Invalid data, MindRecordOp failed to count total rows.
+Line of code : 458
+File         : /home/jenkins/agent-working-dir/workspace/Compile_Ascend_ARM_EulerOS/mindspore/mindspore/ccsrc/minddata/dataset/engine/datasetops/source/mindrecord_op.cc
+[EVENT] IDEDH(106,python):2021-08-13-12:09:03.281.506 [adx_server_manager.cpp:27][tid:106]>>> start to deconstruct adx server manager
+[EVENT] IDEDH(106,python):2021-08-13-12:09:03.369.865 [adx_server_manager.cpp:27][tid:106]>>> start to deconstruct adx server manager
+[EVENT] IDEDH(106,python):2021-08-13-12:09:03.444.764 [adx_server_manager.cpp:27][tid:106]>>> start to deconstruct adx server manager
+[EVENT] IDEDH(106,python):2021-08-13-12:09:03.447.437 [adx_server_manager.cpp:27][tid:106]>>> start to deconstruct adx server manager
+[Modelarts Service Log]2021-08-13 12:09:03,655 - ERROR - proc-rank-0-device-0 (pid: 106) has exited with non-zero code: 1
+[Modelarts Service Log]2021-08-13 12:09:03,655 - INFO - Begin destroy training processes
+[Modelarts Service Log]2021-08-13 12:09:03,655 - INFO - proc-rank-0-device-0 (pid: 106) has exited
+[Modelarts Service Log]2021-08-13 12:09:03,656 - INFO - End destroy training processes
+[Modelarts Service Log]2021-08-13 12:09:03,759 - INFO - final upload stdout log done
+[ModelArts Service Log]modelarts-pipe: total length: 6825
+[Modelarts Service Log]Training end with return code: 1
+[Modelarts Service Log]upload ascend-log to s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/log/ascend-log/ at 2021-08-13-12:09:03
+upload_tail_log.py -l 2048 -o s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/log/ascend-log/
+list /home/work/ascend/log
+totally, 0 ascend log files to be uploaded
+INFO:root:No files to copy.
+[Modelarts Service Log]upload ascend-log end at 2021-08-13-12:09:04
+[Modelarts Service Log]Training end at 2021-08-13-12:09:04
+[Modelarts Service Log]Training completed.

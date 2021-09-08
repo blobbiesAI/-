@@ -1,0 +1,423 @@
+do nothing
+[Modelarts Service Log]user: uid=1101(work) gid=1101(work) groups=1101(work),1000(HwHiAiUser)
+[Modelarts Service Log]pwd: /home/work
+[Modelarts Service Log]app_url: s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/code/
+[Modelarts Service Log]boot_file: code/train.py
+[Modelarts Service Log]log_url: /tmp/log/MA-FaceDetection-08-12-16-14.log
+[Modelarts Service Log]command: code/train.py --data_url=s3://yolov3-test2/widerface/ --train_url=s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/output/V0029/
+[Modelarts Service Log]local_code_dir: 
+[Modelarts Service Log]Training start at 2021-08-18-19:59:24
+[Modelarts Service Log][modelarts_create_log] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[Modelarts Service Log]handle inputs of training job
+INFO:root:Using MoXing-v2.0.0.rc0.edc4eece-edc4eece
+INFO:root:Using OBS-Python-SDK-3.20.9.1
+[ModelArts Service Log][INFO][2021/08/18 19:59:25]: env MA_INPUTS is not found, skip the inputs handler
+ln: failed to create symbolic link '/home/work/modelarts/outputs': No such file or directory
+INFO:root:Using MoXing-v2.0.0.rc0.edc4eece-edc4eece
+INFO:root:Using OBS-Python-SDK-3.20.9.1
+[ModelArts Service Log]2021-08-18 19:59:26,398 - modelarts-downloader.py[line:623] - INFO: Main: modelarts-downloader starting with Namespace(dst='./', recursive=True, skip_creating_dir=False, src='s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/code/', trace=False, type='common', verbose=False)
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+[ModelArts Service Log]modelarts-pipe: total length: 24
+/home/work/user-job-dir
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+INFO:root:Using MoXing-v2.0.0.rc0.edc4eece-edc4eece
+INFO:root:Using OBS-Python-SDK-3.20.9.1
+[Modelarts Service Log]2021-08-18 19:59:27,733 - INFO - background upload stdout log to s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/log/job24b8799f-job-ma-facedetection-08-0.log
+[Modelarts Service Log]2021-08-18 19:59:27,742 - INFO - Ascend Driver: Version=20.2.0
+[Modelarts Service Log]2021-08-18 19:59:27,743 - INFO - you are advised to use ASCEND_DEVICE_ID env instead of DEVICE_ID, as the DEVICE_ID env will be discarded in later versions
+[Modelarts Service Log]2021-08-18 19:59:27,743 - INFO - particularly, ${ASCEND_DEVICE_ID} == ${DEVICE_ID}, it's the logical device id
+[Modelarts Service Log]2021-08-18 19:59:27,743 - INFO - Davinci training command
+[Modelarts Service Log]2021-08-18 19:59:27,743 - INFO - ['/usr/bin/python', '/home/work/user-job-dir/code/train.py', '--data_url=s3://yolov3-test2/widerface/', '--train_url=s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/output/V0029/']
+[Modelarts Service Log]2021-08-18 19:59:27,743 - INFO - Wait for Rank table file ready
+[Modelarts Service Log]2021-08-18 19:59:27,743 - INFO - Rank table file (K8S generated) is ready for read
+[Modelarts Service Log]2021-08-18 19:59:27,744 - INFO - 
+{
+    "status": "completed",
+    "group_count": "1",
+    "group_list": [
+        {
+            "group_name": "job-ma-facedetection-08",
+            "device_count": "1",
+            "instance_count": "1",
+            "instance_list": [
+                {
+                    "pod_name": "job24b8799f-job-ma-facedetection-08-0",
+                    "server_id": "192.168.0.242",
+                    "devices": [
+                        {
+                            "device_id": "4",
+                            "device_ip": "192.1.4.139"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2021-08-18 19:59:27,744 - INFO - Rank table file (C7x)
+[Modelarts Service Log]2021-08-18 19:59:27,744 - INFO - 
+{
+    "status": "completed",
+    "version": "1.0",
+    "server_count": "1",
+    "server_list": [
+        {
+            "server_id": "192.168.0.242",
+            "device": [
+                {
+                    "device_id": "4",
+                    "device_ip": "192.1.4.139",
+                    "rank_id": "0"
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2021-08-18 19:59:27,745 - INFO - Rank table file (C7x) is generated
+[Modelarts Service Log]2021-08-18 19:59:27,745 - INFO - Current server
+[Modelarts Service Log]2021-08-18 19:59:27,745 - INFO - 
+{
+    "server_id": "192.168.0.242",
+    "device": [
+        {
+            "device_id": "4",
+            "device_ip": "192.1.4.139",
+            "rank_id": "0"
+        }
+    ]
+}
+[Modelarts Service Log]2021-08-18 19:59:27,746 - INFO - bootstrap proc-rank-0-device-0
+[Modelarts Service Log]2021-08-18 19:59:27,753 - INFO - proc-rank-0-device-0 (pid: 106)
+[EVENT] PROFILING(106,python):2021-08-18-19:59:28.200.560 [msprof_callback_impl.cpp:151] >>> (tid:106) Started to register profiling callbacks to acl
+[EVENT] PROFILING(106,python):2021-08-18-19:59:28.236.479 [msprof_callback_impl.cpp:151] >>> (tid:106) Started to register profiling callbacks to acl
+[EVENT] PROFILING(106,python):2021-08-18-19:59:28.359.949 [msprof_callback_impl.cpp:151] >>> (tid:106) Started to register profiling callbacks to acl
+{'run_platform': 'run platform, support Ascend and CPU.', 'mindrecord_path': 'dataset path, e.g. /home/data.mindrecord', 'pretrained': 'pretrained model to load', 'local_rank': 'current rank to support distributed', 'use_loss_scale': 'Whether use dynamic loss scale, default is True.'}
+from path:  s3://yolov3-test2/widerface/
+to path:  /cache/data
+===finish data synchronization===
+===save flag===
+Finish sync data from s3://yolov3-test2/widerface/ to /cache/data.
+Dataset downloaded:  ['face_detect_dataset.zip']
+from path:  s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/output/V0029/
+to path:  /cache/train
+INFO:root:No files to copy.
+===finish data synchronization===
+===save flag===
+Finish sync data from s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/output/V0029/ to /cache/train.
+Workspace downloaded:  []
+Zip file path:  /cache/data/face_detect_dataset.zip
+Unzip file save dir:  /cache/data
+Extract Start...
+unzip file num: 4
+unzip percent: 0%
+unzip percent: 25%
+unzip percent: 50%
+unzip percent: 75%
+cost time: 0min:11s.
+Extract Done.
+===Finish extract data synchronization===
+Device: 0, Finish sync unzip data from /cache/data/face_detect_dataset.zip to /cache/data.
+config.outputs_dir /cache/train/output/2021-08-18_time_19_59_52
+=============yolov3 start trainging==================
+2021-08-18 19:59:52,961:INFO:start create dataloader
+['image', 'annotation']
+-------------------------
+2021-08-18 19:59:53,197:INFO:args.steps_per_epoch:502500
+2021-08-18 19:59:53,198:INFO:args.world_size:1
+2021-08-18 19:59:53,198:INFO:args.local_rank:0
+2021-08-18 19:59:53,198:INFO:end create dataloader
+2021-08-18 19:59:53,198:INFO:Args:
+2021-08-18 19:59:53,198:INFO:--> enable_modelarts: True
+2021-08-18 19:59:53,198:INFO:--> data_url: s3://yolov3-test2/widerface/
+2021-08-18 19:59:53,198:INFO:--> train_url: s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/output/V0029/
+2021-08-18 19:59:53,198:INFO:--> checkpoint_url: 
+2021-08-18 19:59:53,198:INFO:--> data_path: /cache/data
+2021-08-18 19:59:53,199:INFO:--> output_path: /cache/train
+2021-08-18 19:59:53,199:INFO:--> load_path: /cache/checkpoint_path
+2021-08-18 19:59:53,199:INFO:--> need_modelarts_dataset_unzip: True
+2021-08-18 19:59:53,199:INFO:--> modelarts_dataset_unzip_name: face_detect_dataset
+2021-08-18 19:59:53,199:INFO:--> run_platform: Ascend
+2021-08-18 19:59:53,199:INFO:--> mindrecord_path: /cache/data/face_detect_dataset/mindrecord_train/data.mindrecord
+2021-08-18 19:59:53,199:INFO:--> pretrained: 
+2021-08-18 19:59:53,199:INFO:--> use_loss_scale: True
+2021-08-18 19:59:53,199:INFO:--> batch_size: 64
+2021-08-18 19:59:53,199:INFO:--> warmup_lr: 0.0004
+2021-08-18 19:59:53,199:INFO:--> lr_rates: [0.002, 0.004, 0.002, 0.0008, 0.0004, 0.0002, 8e-05, 4e-05, 4e-06]
+2021-08-18 19:59:53,199:INFO:--> lr_steps: [8000, 80000, 320000, 480000, 640000, 800000, 1040000, 1280000, 1520000]
+2021-08-18 19:59:53,200:INFO:--> gamma: 0.5
+2021-08-18 19:59:53,200:INFO:--> weight_decay: 0.0
+2021-08-18 19:59:53,200:INFO:--> momentum: 0.5
+2021-08-18 19:59:53,200:INFO:--> max_epoch: 2500
+2021-08-18 19:59:53,200:INFO:--> log_interval: 10
+2021-08-18 19:59:53,200:INFO:--> ckpt_path: /cache/train/output
+2021-08-18 19:59:53,200:INFO:--> ckpt_interval: 10
+2021-08-18 19:59:53,200:INFO:--> result_path: ./results
+2021-08-18 19:59:53,200:INFO:--> input_shape: [768, 448]
+2021-08-18 19:59:53,200:INFO:--> jitter: 0.3
+2021-08-18 19:59:53,200:INFO:--> flip: 0.5
+2021-08-18 19:59:53,200:INFO:--> hue: 0.1
+2021-08-18 19:59:53,201:INFO:--> sat: 1.5
+2021-08-18 19:59:53,201:INFO:--> val: 1.5
+2021-08-18 19:59:53,201:INFO:--> num_classes: 1
+2021-08-18 19:59:53,201:INFO:--> anchors: [[15, 19], [21, 26], [28, 36], [38, 49], [54, 71], [77, 102], [122, 162], [207, 268]]
+2021-08-18 19:59:53,201:INFO:--> anchors_mask: [[4, 5, 6, 7], [0, 1, 2, 3]]
+2021-08-18 19:59:53,201:INFO:--> conf_thresh: 0.1
+2021-08-18 19:59:53,201:INFO:--> nms_thresh: 0.45
+2021-08-18 19:59:53,201:INFO:--> file_name: FaceDetection
+2021-08-18 19:59:53,201:INFO:--> file_format: AIR
+2021-08-18 19:59:53,201:INFO:--> preprocess_path: 
+2021-08-18 19:59:53,201:INFO:--> save_output_path: 
+2021-08-18 19:59:53,201:INFO:--> data_dir: 
+2021-08-18 19:59:53,202:INFO:--> config_path: /cache/user-job-dir/code/model_utils/../default_config.yaml
+2021-08-18 19:59:53,202:INFO:--> device_num: 1
+2021-08-18 19:59:53,202:INFO:--> device_id: 0
+2021-08-18 19:59:53,202:INFO:--> world_size: 1
+2021-08-18 19:59:53,202:INFO:--> local_rank: 0
+2021-08-18 19:59:53,202:INFO:--> outputs_dir: /cache/train/output/2021-08-18_time_19_59_52
+2021-08-18 19:59:53,202:INFO:--> num_anchors_list: [4, 4]
+2021-08-18 19:59:53,202:INFO:--> logger: <LOGGER yolov3_face_detection (NOTSET)>
+2021-08-18 19:59:53,202:INFO:--> steps_per_epoch: 502500
+2021-08-18 19:59:53,202:INFO:
+2021-08-18 19:59:53,202:INFO:
+**********************************************************************
+**********************************************************************
+**
+**
+**        start create network
+**
+**
+**********************************************************************
+**********************************************************************
+2021-08-18 19:59:53,202:INFO:train opt momentum:0.5
+2021-08-18 19:59:53,203:INFO:real weight_decay:0.0
+2021-08-18 19:59:53,203:INFO:lr_scale:0.125
+real warmup_lr 6.25e-06
+real lr_rates [3.90625e-06, 7.8125e-06, 3.90625e-06, 1.5625e-06, 7.8125e-07, 3.90625e-07, 1.5625e-07, 7.8125e-08, 7.8125e-09]
+[EVENT] TDT(106,python):2021-08-18-20:09:19.717.855 [log.cpp:148][TsdClient] enter into open process logicDeviceId[0] rankSize[0],[tsd_client.cpp:906:Open]106
+[EVENT] TDT(106,python):2021-08-18-20:09:19.717.910 [log.cpp:148][TsdClient] start process through tsdaemon, begin check aicpu opkernel,[tsd_client.cpp:919:Open]106
+[EVENT] TDT(106,python):2021-08-18-20:09:19.780.223 [log.cpp:148][TsdClient][logicDeviceId_=0] check aicpu opkernel success,[tsd_client.cpp:924:Open]106
+[EVENT] TDT(106,python):2021-08-18-20:09:19.780.254 [log.cpp:148][TsdClient] logicDeviceId=0 enter into Open hccp and computer process,[tsd_client.cpp:608:TsdClientInit]106
+[EVENT] TDT(106,python):2021-08-18-20:09:19.780.531 [log.cpp:148]VersionVerify: send client version to server,[version_verify.cpp:38:SetVersionInfo]106
+[EVENT] TDT(106,python):2021-08-18-20:09:19.780.894 [log.cpp:148]VersionVerify: Check client version info, server[1230], client[1230],[version_verify.cpp:63:PeerVersionCheck]106
+[EVENT] TDT(106,python):2021-08-18-20:09:19.780.904 [log.cpp:148]VersionVerify: pass client version info success,[version_verify.cpp:84:ParseVersionInfo]106
+[EVENT] TDT(106,python):2021-08-18-20:09:19.780.911 [log.cpp:148]Service[2] create hdc success,[hdc_client.cpp:406:CheckHdcConnection]106
+[EVENT] TDT(106,python):2021-08-18-20:09:19.780.955 [log.cpp:148]VersionVerify: previous type[6], supported,[version_verify.cpp:106:SpecialFeatureCheck]106
+[EVENT] TDT(106,python):2021-08-18-20:09:19.780.978 [log.cpp:148][TsdClient][logicDeviceId_=0] [sessionId=1][rankSize=0]wait hccp and computer process start respond,[tsd_client.cpp:948:Open]106
+[EVENT] TDT(106,python):2021-08-18-20:09:20.106.799 [log.cpp:148][TsdClient][logicDeviceId_=0] [sessionId=1] start hccp and computer process success,[tsd_client.cpp:972:Open]106
+[EVENT] TDT(106,python):2021-08-18-20:09:20.127.573 [log.cpp:148]TdtHost[0] init begin,[tdt_host.cpp:163:Init]106
+[EVENT] TDT(106,python):2021-08-18-20:09:20.129.170 [log.cpp:148]TdtHost[0] init successfully.,[tdt_host.cpp:215:Init]106
+[EVENT] TDT(106,python):2021-08-18-20:09:21.129.305 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:22.129.556 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:23.129.747 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:24.129.910 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:25.130.079 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:26.130.259 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:27.130.418 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:28.130.615 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:29.130.805 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:30.131.134 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:31.131.300 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:32.131.507 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:33.131.664 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:34.131.810 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:35.131.971 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+checkpoint: 502500
+[EVENT] TDT(106,python):2021-08-18-20:09:36.132.212 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:37.132.363 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:38.132.577 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:39.132.736 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:40.132.899 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:41.133.066 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:42.133.316 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:43.133.487 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:44.133.664 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:45.133.822 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:46.134.013 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:47.134.192 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:48.134.358 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:49.134.525 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:50.134.708 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:51.134.863 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:52.135.014 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:53.135.309 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:54.135.598 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:55.135.802 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:56.137.721 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:57.137.893 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:58.138.074 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:09:59.138.229 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:00.138.396 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:01.138.642 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:02.138.838 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:03.139.012 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:04.139.181 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:05.139.354 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:06.139.583 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:07.139.801 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:08.139.996 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:09.140.157 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:10.140.317 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:11.140.496 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:12.140.747 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:13.141.075 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:14.141.341 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:15.141.493 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:16.141.655 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:17.143.397 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:18.143.793 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:19.143.972 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:20.144.133 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:21.144.290 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:22.144.515 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:23.144.659 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:24.144.864 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:25.145.048 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:26.145.255 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:27.145.542 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:28.146.073 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:29.146.357 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:30.146.524 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:31.146.694 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:32.148.606 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:33.148.804 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:34.148.964 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:35.149.135 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:36.149.303 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:37.149.585 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:38.149.803 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:39.149.984 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:40.150.165 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:41.150.439 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:42.150.633 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:43.150.802 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:44.150.972 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:45.151.129 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:46.151.295 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:47.151.458 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:48.151.616 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:49.151.773 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:50.151.944 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:51.152.106 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:52.152.263 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:53.152.416 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:54.152.573 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:55.152.725 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:56.152.889 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:57.153.044 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:58.153.374 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:10:59.153.668 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:00.153.829 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:01.153.990 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:02.154.163 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:03.154.327 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] PROFILING(996,python):2021-08-18-20:11:03.974.905 [msprof_callback_impl.cpp:151] >>> (tid:996) Started to register profiling callbacks to acl
+[EVENT] PROFILING(996,python):2021-08-18-20:11:03.984.245 [msprof_callback_impl.cpp:151] >>> (tid:996) Started to register profiling callbacks to acl
+[EVENT] PROFILING(996,python):2021-08-18-20:11:04.006.810 [msprof_callback_impl.cpp:151] >>> (tid:996) Started to register profiling callbacks to acl
+[EVENT] TDT(106,python):2021-08-18-20:11:04.154.514 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:05.154.703 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:06.154.860 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:07.155.020 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:08.155.184 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:09.155.336 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:10.155.489 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:11.155.659 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:12.155.825 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:13.155.995 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:14.156.166 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:15.156.332 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:16.156.494 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:17.156.641 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[WARNING] SESSION(106,python):2021-08-18-20:11:17.415.667 [mindspore/ccsrc/backend/session/ascend_session.cc:1400] SelectKernel] There are 122 node/nodes used reduce precision to selected the kernel!
+[EVENT] TDT(106,python):2021-08-18-20:11:18.156.802 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:19.156.966 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:20.158.777 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:21.159.126 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:22.159.276 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:23.159.425 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:24.159.550 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:25.159.681 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:26.159.832 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:27.160.060 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:28.160.238 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:29.160.401 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:30.160.530 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:31.160.698 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:32.160.856 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[WARNING] KERNEL(106,python):2021-08-18-20:11:33.071.719 [mindspore/ccsrc/backend/kernel_compiler/tbe/tbe_utils.cc:75] SaveJsonInfo] Create info file failed(./kernel_meta/te_fusion_bn_training_update_relu_v2_17728197266060904038_0.info).
+[WARNING] KERNEL(106,python):2021-08-18-20:11:33.075.109 [mindspore/ccsrc/backend/kernel_compiler/tbe/tbe_utils.cc:75] SaveJsonInfo] Create info file failed(./kernel_meta/te_fusion_bn_training_update_relu_v2_12068408815796315209_0.info).
+[WARNING] KERNEL(106,python):2021-08-18-20:11:33.077.720 [mindspore/ccsrc/backend/kernel_compiler/tbe/tbe_utils.cc:75] SaveJsonInfo] Create info file failed(./kernel_meta/te_fusion_bn_training_update_relu_v2_5129891038550619099_0.info).
+[WARNING] KERNEL(106,python):2021-08-18-20:11:33.081.735 [mindspore/ccsrc/backend/kernel_compiler/tbe/tbe_utils.cc:75] SaveJsonInfo] Create info file failed(./kernel_meta/te_fusion_bn_training_update_relu_v2_11817223226939199402_0.info).
+[WARNING] KERNEL(106,python):2021-08-18-20:11:33.084.325 [mindspore/ccsrc/backend/kernel_compiler/tbe/tbe_utils.cc:75] SaveJsonInfo] Create info file failed(./kernel_meta/te_fusion_bn_training_update_relu_v2_15516114338708604140_0.info).
+[WARNING] KERNEL(106,python):2021-08-18-20:11:33.088.489 [mindspore/ccsrc/backend/kernel_compiler/tbe/tbe_utils.cc:75] SaveJsonInfo] Create info file failed(./kernel_meta/te_fusion_bias_add_relu_v2_340294238606343055_0.info).
+[WARNING] KERNEL(106,python):2021-08-18-20:11:33.091.065 [mindspore/ccsrc/backend/kernel_compiler/tbe/tbe_utils.cc:75] SaveJsonInfo] Create info file failed(./kernel_meta/te_fusion_bn_training_update_relu_v2_5320037403791815107_0.info).
+[WARNING] KERNEL(106,python):2021-08-18-20:11:33.093.583 [mindspore/ccsrc/backend/kernel_compiler/tbe/tbe_utils.cc:75] SaveJsonInfo] Create info file failed(./kernel_meta/te_fusion_bn_training_update_relu_v2_9560023432232158375_0.info).
+[WARNING] KERNEL(106,python):2021-08-18-20:11:33.103.529 [mindspore/ccsrc/backend/kernel_compiler/tbe/tbe_utils.cc:75] SaveJsonInfo] Create info file failed(./kernel_meta/te_fusion_bn_training_update_relu_v2_13116341032228701743_0.info).
+[EVENT] TDT(106,python):2021-08-18-20:11:33.161.106 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:34.161.271 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:35.161.449 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:36.161.622 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:37.161.787 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:38.161.963 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:39.162.137 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:40.162.333 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:41.176.772 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:42.176.943 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:43.177.115 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:44.177.294 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:45.177.469 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:46.177.645 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:47.177.829 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:48.178.005 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:49.178.176 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:50.178.354 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:51.178.521 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:52.178.689 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:53.178.870 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:54.179.041 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:55.179.225 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:56.179.405 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:57.179.581 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:58.179.744 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:11:59.179.901 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:00.180.068 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:01.180.246 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:02.180.430 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:03.180.602 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:04.180.772 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:05.180.948 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:06.181.105 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:07.181.263 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:08.181.436 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:09.181.612 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:10.181.799 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:11.181.982 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:12.182.149 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:13.182.317 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:14.182.490 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:15.182.661 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:16.182.825 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:17.182.993 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:18.183.152 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:19.183.319 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:20.183.492 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:21.183.652 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:22.183.817 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:23.184.002 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:24.184.166 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:25.184.337 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:26.184.511 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:27.184.645 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:28.184.816 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:29.184.987 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:30.185.166 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:31.185.333 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-18-20:12:32.185.508 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145

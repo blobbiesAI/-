@@ -1,0 +1,204 @@
+do nothing
+[Modelarts Service Log]user: uid=1101(work) gid=1101(work) groups=1101(work),1000(HwHiAiUser)
+[Modelarts Service Log]pwd: /home/work
+[Modelarts Service Log]app_url: s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/code/
+[Modelarts Service Log]boot_file: code/train.py
+[Modelarts Service Log]log_url: /tmp/log/MA-FaceDetection-08-12-16-14.log
+[Modelarts Service Log]command: code/train.py --data_url=s3://yolov3-test2/widerface/ --train_url=s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/output/V0028/
+[Modelarts Service Log]local_code_dir: 
+[Modelarts Service Log]Training start at 2021-08-18-19:50:22
+[Modelarts Service Log][modelarts_create_log] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[Modelarts Service Log]handle inputs of training job
+INFO:root:Using MoXing-v2.0.0.rc0.edc4eece-edc4eece
+INFO:root:Using OBS-Python-SDK-3.20.9.1
+[ModelArts Service Log][INFO][2021/08/18 19:50:23]: env MA_INPUTS is not found, skip the inputs handler
+ln: failed to create symbolic link '/home/work/modelarts/outputs': No such file or directory
+INFO:root:Using MoXing-v2.0.0.rc0.edc4eece-edc4eece
+INFO:root:Using OBS-Python-SDK-3.20.9.1
+[ModelArts Service Log]2021-08-18 19:50:24,239 - modelarts-downloader.py[line:623] - INFO: Main: modelarts-downloader starting with Namespace(dst='./', recursive=True, skip_creating_dir=False, src='s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/code/', trace=False, type='common', verbose=False)
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+[ModelArts Service Log]modelarts-pipe: total length: 24
+/home/work/user-job-dir
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+INFO:root:Using MoXing-v2.0.0.rc0.edc4eece-edc4eece
+INFO:root:Using OBS-Python-SDK-3.20.9.1
+[Modelarts Service Log]2021-08-18 19:50:25,549 - INFO - background upload stdout log to s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/log/joba979a261-job-ma-facedetection-08-0.log
+[Modelarts Service Log]2021-08-18 19:50:25,560 - INFO - Ascend Driver: Version=20.2.0
+[Modelarts Service Log]2021-08-18 19:50:25,560 - INFO - you are advised to use ASCEND_DEVICE_ID env instead of DEVICE_ID, as the DEVICE_ID env will be discarded in later versions
+[Modelarts Service Log]2021-08-18 19:50:25,561 - INFO - particularly, ${ASCEND_DEVICE_ID} == ${DEVICE_ID}, it's the logical device id
+[Modelarts Service Log]2021-08-18 19:50:25,561 - INFO - Davinci training command
+[Modelarts Service Log]2021-08-18 19:50:25,561 - INFO - ['/usr/bin/python', '/home/work/user-job-dir/code/train.py', '--data_url=s3://yolov3-test2/widerface/', '--train_url=s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/output/V0028/']
+[Modelarts Service Log]2021-08-18 19:50:25,561 - INFO - Wait for Rank table file ready
+[Modelarts Service Log]2021-08-18 19:50:25,561 - INFO - Rank table file (K8S generated) is ready for read
+[Modelarts Service Log]2021-08-18 19:50:25,562 - INFO - 
+{
+    "status": "completed",
+    "group_count": "1",
+    "group_list": [
+        {
+            "group_name": "job-ma-facedetection-08",
+            "device_count": "1",
+            "instance_count": "1",
+            "instance_list": [
+                {
+                    "pod_name": "joba979a261-job-ma-facedetection-08-0",
+                    "server_id": "192.168.0.242",
+                    "devices": [
+                        {
+                            "device_id": "3",
+                            "device_ip": "192.4.10.193"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2021-08-18 19:50:25,562 - INFO - Rank table file (C7x)
+[Modelarts Service Log]2021-08-18 19:50:25,562 - INFO - 
+{
+    "status": "completed",
+    "version": "1.0",
+    "server_count": "1",
+    "server_list": [
+        {
+            "server_id": "192.168.0.242",
+            "device": [
+                {
+                    "device_id": "3",
+                    "device_ip": "192.4.10.193",
+                    "rank_id": "0"
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2021-08-18 19:50:25,563 - INFO - Rank table file (C7x) is generated
+[Modelarts Service Log]2021-08-18 19:50:25,563 - INFO - Current server
+[Modelarts Service Log]2021-08-18 19:50:25,563 - INFO - 
+{
+    "server_id": "192.168.0.242",
+    "device": [
+        {
+            "device_id": "3",
+            "device_ip": "192.4.10.193",
+            "rank_id": "0"
+        }
+    ]
+}
+[Modelarts Service Log]2021-08-18 19:50:25,564 - INFO - bootstrap proc-rank-0-device-0
+[Modelarts Service Log]2021-08-18 19:50:25,573 - INFO - proc-rank-0-device-0 (pid: 107)
+[EVENT] PROFILING(107,python):2021-08-18-19:50:26.029.643 [msprof_callback_impl.cpp:151] >>> (tid:107) Started to register profiling callbacks to acl
+[EVENT] PROFILING(107,python):2021-08-18-19:50:26.066.288 [msprof_callback_impl.cpp:151] >>> (tid:107) Started to register profiling callbacks to acl
+[EVENT] PROFILING(107,python):2021-08-18-19:50:26.192.953 [msprof_callback_impl.cpp:151] >>> (tid:107) Started to register profiling callbacks to acl
+{'run_platform': 'run platform, support Ascend and CPU.', 'mindrecord_path': 'dataset path, e.g. /home/data.mindrecord', 'pretrained': 'pretrained model to load', 'local_rank': 'current rank to support distributed', 'use_loss_scale': 'Whether use dynamic loss scale, default is True.'}
+from path:  s3://yolov3-test2/widerface/
+to path:  /cache/data
+===finish data synchronization===
+===save flag===
+Finish sync data from s3://yolov3-test2/widerface/ to /cache/data.
+Dataset downloaded:  ['face_detect_dataset.zip']
+from path:  s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/output/V0028/
+to path:  /cache/train
+INFO:root:No files to copy.
+===finish data synchronization===
+===save flag===
+Finish sync data from s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/output/V0028/ to /cache/train.
+Workspace downloaded:  []
+Zip file path:  /cache/data/face_detect_dataset.zip
+Unzip file save dir:  /cache/data
+Extract Start...
+unzip file num: 4
+unzip percent: 0%
+unzip percent: 25%
+unzip percent: 50%
+unzip percent: 75%
+cost time: 0min:11s.
+Extract Done.
+===Finish extract data synchronization===
+Device: 0, Finish sync unzip data from /cache/data/face_detect_dataset.zip to /cache/data.
+config.outputs_dir /cache/train/output/2021-08-18_time_19_50_52
+=============yolov3 start trainging==================
+2021-08-18 19:50:52,736:INFO:start create dataloader
+['image', 'annotation']
+-------------------------
+2021-08-18 19:50:52,958:INFO:args.steps_per_epoch:502500
+2021-08-18 19:50:52,958:INFO:args.world_size:1
+2021-08-18 19:50:52,958:INFO:args.local_rank:0
+2021-08-18 19:50:52,959:INFO:end create dataloader
+2021-08-18 19:50:52,959:INFO:Args:
+2021-08-18 19:50:52,959:INFO:--> enable_modelarts: True
+2021-08-18 19:50:52,959:INFO:--> data_url: s3://yolov3-test2/widerface/
+2021-08-18 19:50:52,959:INFO:--> train_url: s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/output/V0028/
+2021-08-18 19:50:52,959:INFO:--> checkpoint_url: 
+2021-08-18 19:50:52,959:INFO:--> data_path: /cache/data
+2021-08-18 19:50:52,959:INFO:--> output_path: /cache/train
+2021-08-18 19:50:52,959:INFO:--> load_path: /cache/checkpoint_path
+2021-08-18 19:50:52,959:INFO:--> need_modelarts_dataset_unzip: True
+2021-08-18 19:50:52,959:INFO:--> modelarts_dataset_unzip_name: face_detect_dataset
+2021-08-18 19:50:52,959:INFO:--> run_platform: Ascend
+2021-08-18 19:50:52,960:INFO:--> mindrecord_path: /cache/data/face_detect_dataset/mindrecord_train/data.mindrecord
+2021-08-18 19:50:52,960:INFO:--> pretrained: 
+2021-08-18 19:50:52,960:INFO:--> use_loss_scale: True
+2021-08-18 19:50:52,960:INFO:--> batch_size: 64
+2021-08-18 19:50:52,960:INFO:--> warmup_lr: 0.0004
+2021-08-18 19:50:52,960:INFO:--> lr_rates: [0.002, 0.004, 0.002, 0.0008, 0.0004, 0.0002, 8e-05, 4e-05, 4e-06]
+2021-08-18 19:50:52,960:INFO:--> lr_steps: [8000, 80000, 320000, 480000, 640000, 800000, 1040000, 1280000, 1520000]
+2021-08-18 19:50:52,960:INFO:--> gamma: 0.5
+2021-08-18 19:50:52,960:INFO:--> weight_decay: 0.0
+2021-08-18 19:50:52,960:INFO:--> momentum: 0.5
+2021-08-18 19:50:52,960:INFO:--> max_epoch: 2500
+2021-08-18 19:50:52,961:INFO:--> log_interval: 10
+2021-08-18 19:50:52,961:INFO:--> ckpt_path: /cache/train/output
+2021-08-18 19:50:52,961:INFO:--> ckpt_interval: 10
+2021-08-18 19:50:52,961:INFO:--> result_path: ./results
+2021-08-18 19:50:52,961:INFO:--> input_shape: [768, 448]
+2021-08-18 19:50:52,961:INFO:--> jitter: 0.3
+2021-08-18 19:50:52,961:INFO:--> flip: 0.5
+2021-08-18 19:50:52,961:INFO:--> hue: 0.1
+2021-08-18 19:50:52,961:INFO:--> sat: 1.5
+2021-08-18 19:50:52,961:INFO:--> val: 1.5
+2021-08-18 19:50:52,961:INFO:--> num_classes: 1
+2021-08-18 19:50:52,961:INFO:--> anchors: [[15, 19], [21, 26], [28, 36], [38, 49], [54, 71], [77, 102], [122, 162], [207, 268]]
+2021-08-18 19:50:52,962:INFO:--> anchors_mask: [[4, 5, 6, 7], [0, 1, 2, 3]]
+2021-08-18 19:50:52,962:INFO:--> conf_thresh: 0.1
+2021-08-18 19:50:52,962:INFO:--> nms_thresh: 0.45
+2021-08-18 19:50:52,962:INFO:--> file_name: FaceDetection
+2021-08-18 19:50:52,962:INFO:--> file_format: AIR
+2021-08-18 19:50:52,962:INFO:--> preprocess_path: 
+2021-08-18 19:50:52,962:INFO:--> save_output_path: 
+2021-08-18 19:50:52,962:INFO:--> data_dir: 
+2021-08-18 19:50:52,962:INFO:--> config_path: /cache/user-job-dir/code/model_utils/../default_config.yaml
+2021-08-18 19:50:52,962:INFO:--> device_num: 1
+2021-08-18 19:50:52,962:INFO:--> device_id: 0
+2021-08-18 19:50:52,962:INFO:--> world_size: 1
+2021-08-18 19:50:52,963:INFO:--> local_rank: 0
+2021-08-18 19:50:52,963:INFO:--> outputs_dir: /cache/train/output/2021-08-18_time_19_50_52
+2021-08-18 19:50:52,963:INFO:--> num_anchors_list: [4, 4]
+2021-08-18 19:50:52,963:INFO:--> logger: <LOGGER yolov3_face_detection (NOTSET)>
+2021-08-18 19:50:52,963:INFO:--> steps_per_epoch: 502500
+2021-08-18 19:50:52,963:INFO:
+2021-08-18 19:50:52,963:INFO:
+**********************************************************************
+**********************************************************************
+**
+**
+**        start create network
+**
+**
+**********************************************************************
+**********************************************************************
+2021-08-18 19:50:52,963:INFO:train opt momentum:0.5
+2021-08-18 19:50:52,963:INFO:real weight_decay:0.0
+2021-08-18 19:50:52,963:INFO:lr_scale:0.125
+real warmup_lr 6.25e-06
+real lr_rates [3.90625e-06, 7.8125e-06, 3.90625e-06, 1.5625e-06, 7.8125e-07, 3.90625e-07, 1.5625e-07, 7.8125e-08, 7.8125e-09]

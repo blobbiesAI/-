@@ -1,0 +1,259 @@
+do nothing
+[Modelarts Service Log]user: uid=1101(work) gid=1101(work) groups=1101(work),1000(HwHiAiUser)
+[Modelarts Service Log]pwd: /home/work
+[Modelarts Service Log]app_url: s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/code/
+[Modelarts Service Log]boot_file: code/train.py
+[Modelarts Service Log]log_url: /tmp/log/MA-FaceDetection-08-12-16-14.log
+[Modelarts Service Log]command: code/train.py --data_url=s3://yolov3-test2/widerface/ --train_url=s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/output/V0026/
+[Modelarts Service Log]local_code_dir: 
+[Modelarts Service Log]Training start at 2021-08-17-17:27:14
+[Modelarts Service Log][modelarts_create_log] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[Modelarts Service Log]handle inputs of training job
+INFO:root:Using MoXing-v2.0.0.rc0.edc4eece-edc4eece
+INFO:root:Using OBS-Python-SDK-3.20.9.1
+[ModelArts Service Log][INFO][2021/08/17 17:27:15]: env MA_INPUTS is not found, skip the inputs handler
+ln: failed to create symbolic link '/home/work/modelarts/outputs': No such file or directory
+INFO:root:Using MoXing-v2.0.0.rc0.edc4eece-edc4eece
+INFO:root:Using OBS-Python-SDK-3.20.9.1
+[ModelArts Service Log]2021-08-17 17:27:16,728 - modelarts-downloader.py[line:623] - INFO: Main: modelarts-downloader starting with Namespace(dst='./', recursive=True, skip_creating_dir=False, src='s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/code/', trace=False, type='common', verbose=False)
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+[ModelArts Service Log]modelarts-pipe: total length: 24
+/home/work/user-job-dir
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-FaceDetection-08-12-16-14.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+INFO:root:Using MoXing-v2.0.0.rc0.edc4eece-edc4eece
+INFO:root:Using OBS-Python-SDK-3.20.9.1
+[Modelarts Service Log]2021-08-17 17:27:18,285 - INFO - background upload stdout log to s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/log/jobd04f23c6-job-ma-facedetection-08-0.log
+[Modelarts Service Log]2021-08-17 17:27:18,296 - INFO - Ascend Driver: Version=20.2.0
+[Modelarts Service Log]2021-08-17 17:27:18,296 - INFO - you are advised to use ASCEND_DEVICE_ID env instead of DEVICE_ID, as the DEVICE_ID env will be discarded in later versions
+[Modelarts Service Log]2021-08-17 17:27:18,296 - INFO - particularly, ${ASCEND_DEVICE_ID} == ${DEVICE_ID}, it's the logical device id
+[Modelarts Service Log]2021-08-17 17:27:18,296 - INFO - Davinci training command
+[Modelarts Service Log]2021-08-17 17:27:18,296 - INFO - ['/usr/bin/python', '/home/work/user-job-dir/code/train.py', '--data_url=s3://yolov3-test2/widerface/', '--train_url=s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/output/V0026/']
+[Modelarts Service Log]2021-08-17 17:27:18,297 - INFO - Wait for Rank table file ready
+[Modelarts Service Log]2021-08-17 17:27:18,297 - INFO - Rank table file (K8S generated) is ready for read
+[Modelarts Service Log]2021-08-17 17:27:18,297 - INFO - 
+{
+    "status": "completed",
+    "group_count": "1",
+    "group_list": [
+        {
+            "group_name": "job-ma-facedetection-08",
+            "device_count": "1",
+            "instance_count": "1",
+            "instance_list": [
+                {
+                    "pod_name": "jobd04f23c6-job-ma-facedetection-08-0",
+                    "server_id": "192.168.0.156",
+                    "devices": [
+                        {
+                            "device_id": "4",
+                            "device_ip": "192.1.15.29"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2021-08-17 17:27:18,297 - INFO - Rank table file (C7x)
+[Modelarts Service Log]2021-08-17 17:27:18,297 - INFO - 
+{
+    "status": "completed",
+    "version": "1.0",
+    "server_count": "1",
+    "server_list": [
+        {
+            "server_id": "192.168.0.156",
+            "device": [
+                {
+                    "device_id": "4",
+                    "device_ip": "192.1.15.29",
+                    "rank_id": "0"
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2021-08-17 17:27:18,298 - INFO - Rank table file (C7x) is generated
+[Modelarts Service Log]2021-08-17 17:27:18,298 - INFO - Current server
+[Modelarts Service Log]2021-08-17 17:27:18,298 - INFO - 
+{
+    "server_id": "192.168.0.156",
+    "device": [
+        {
+            "device_id": "4",
+            "device_ip": "192.1.15.29",
+            "rank_id": "0"
+        }
+    ]
+}
+[Modelarts Service Log]2021-08-17 17:27:18,299 - INFO - bootstrap proc-rank-0-device-0
+[Modelarts Service Log]2021-08-17 17:27:18,305 - INFO - proc-rank-0-device-0 (pid: 106)
+[EVENT] PROFILING(106,python):2021-08-17-17:27:18.771.981 [msprof_callback_impl.cpp:151] >>> (tid:106) Started to register profiling callbacks to acl
+[EVENT] PROFILING(106,python):2021-08-17-17:27:18.809.380 [msprof_callback_impl.cpp:151] >>> (tid:106) Started to register profiling callbacks to acl
+[EVENT] PROFILING(106,python):2021-08-17-17:27:18.938.325 [msprof_callback_impl.cpp:151] >>> (tid:106) Started to register profiling callbacks to acl
+{'run_platform': 'run platform, support Ascend and CPU.', 'mindrecord_path': 'dataset path, e.g. /home/data.mindrecord', 'pretrained': 'pretrained model to load', 'local_rank': 'current rank to support distributed', 'use_loss_scale': 'Whether use dynamic loss scale, default is True.'}
+from path:  s3://yolov3-test2/widerface/
+to path:  /cache/data
+===finish data synchronization===
+===save flag===
+Finish sync data from s3://yolov3-test2/widerface/ to /cache/data.
+Dataset downloaded:  ['face_detect_dataset.zip']
+from path:  s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/output/V0026/
+to path:  /cache/train
+INFO:root:No files to copy.
+===finish data synchronization===
+===save flag===
+Finish sync data from s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/output/V0026/ to /cache/train.
+Workspace downloaded:  []
+Zip file path:  /cache/data/face_detect_dataset.zip
+Unzip file save dir:  /cache/data
+unzip percent: 25%
+unzip percent: 50%
+unzip percent: 75%
+cost time: 0min:11s.
+Extract Done.
+===Finish extract data synchronization===
+Device: 0, Finish sync unzip data from /cache/data/face_detect_dataset.zip to /cache/data.
+config.outputs_dir /cache/train/output/2021-08-17_time_17_27_45
+=============yolov3 start trainging==================
+2021-08-17 17:27:45,189:INFO:start create dataloader
+['image', 'annotation']
+-------------------------
+2021-08-17 17:27:45,396:INFO:args.steps_per_epoch:502500
+2021-08-17 17:27:45,396:INFO:args.world_size:1
+2021-08-17 17:27:45,397:INFO:args.local_rank:0
+2021-08-17 17:27:45,397:INFO:end create dataloader
+2021-08-17 17:27:45,397:INFO:Args:
+2021-08-17 17:27:45,397:INFO:--> enable_modelarts: True
+2021-08-17 17:27:45,397:INFO:--> data_url: s3://yolov3-test2/widerface/
+2021-08-17 17:27:45,397:INFO:--> train_url: s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/output/V0026/
+2021-08-17 17:27:45,397:INFO:--> checkpoint_url: 
+2021-08-17 17:27:45,397:INFO:--> data_path: /cache/data
+2021-08-17 17:27:45,397:INFO:--> output_path: /cache/train
+2021-08-17 17:27:45,397:INFO:--> load_path: /cache/checkpoint_path
+2021-08-17 17:27:45,397:INFO:--> need_modelarts_dataset_unzip: True
+2021-08-17 17:27:45,398:INFO:--> modelarts_dataset_unzip_name: face_detect_dataset
+2021-08-17 17:27:45,398:INFO:--> run_platform: Ascend
+2021-08-17 17:27:45,398:INFO:--> mindrecord_path: /cache/data/face_detect_dataset/mindrecord_train/data.mindrecord
+2021-08-17 17:27:45,398:INFO:--> pretrained: 
+2021-08-17 17:27:45,398:INFO:--> use_loss_scale: True
+2021-08-17 17:27:45,398:INFO:--> batch_size: 64
+2021-08-17 17:27:45,398:INFO:--> warmup_lr: 0.0004
+2021-08-17 17:27:45,398:INFO:--> lr_rates: [0.002, 0.004, 0.002, 0.0008, 0.0004, 0.0002, 8e-05, 4e-05, 4e-06]
+2021-08-17 17:27:45,398:INFO:--> lr_steps: [8000, 80000, 320000, 480000, 640000, 800000, 1040000, 1280000, 1520000]
+2021-08-17 17:27:45,398:INFO:--> gamma: 0.5
+2021-08-17 17:27:45,399:INFO:--> weight_decay: 0.0
+2021-08-17 17:27:45,399:INFO:--> momentum: 0.5
+2021-08-17 17:27:45,399:INFO:--> max_epoch: 2500
+2021-08-17 17:27:45,399:INFO:--> log_interval: 10
+2021-08-17 17:27:45,399:INFO:--> ckpt_path: /cache/train/output
+2021-08-17 17:27:45,399:INFO:--> ckpt_interval: 1000
+2021-08-17 17:27:45,399:INFO:--> result_path: ./results
+2021-08-17 17:27:45,399:INFO:--> input_shape: [768, 448]
+2021-08-17 17:27:45,399:INFO:--> jitter: 0.3
+2021-08-17 17:27:45,399:INFO:--> flip: 0.5
+2021-08-17 17:27:45,399:INFO:--> hue: 0.1
+2021-08-17 17:27:45,400:INFO:--> sat: 1.5
+2021-08-17 17:27:45,400:INFO:--> val: 1.5
+2021-08-17 17:27:45,400:INFO:--> num_classes: 1
+2021-08-17 17:27:45,400:INFO:--> anchors: [[15, 19], [21, 26], [28, 36], [38, 49], [54, 71], [77, 102], [122, 162], [207, 268]]
+2021-08-17 17:27:45,400:INFO:--> anchors_mask: [[4, 5, 6, 7], [0, 1, 2, 3]]
+2021-08-17 17:27:45,400:INFO:--> conf_thresh: 0.1
+2021-08-17 17:27:45,400:INFO:--> nms_thresh: 0.45
+2021-08-17 17:27:45,400:INFO:--> file_name: FaceDetection
+2021-08-17 17:27:45,400:INFO:--> file_format: AIR
+2021-08-17 17:27:45,400:INFO:--> preprocess_path: 
+2021-08-17 17:27:45,400:INFO:--> save_output_path: 
+2021-08-17 17:27:45,401:INFO:--> data_dir: 
+2021-08-17 17:27:45,401:INFO:--> config_path: /cache/user-job-dir/code/model_utils/../default_config.yaml
+2021-08-17 17:27:45,401:INFO:--> device_num: 1
+2021-08-17 17:27:45,401:INFO:--> device_id: 0
+2021-08-17 17:27:45,401:INFO:--> world_size: 1
+2021-08-17 17:27:45,401:INFO:--> local_rank: 0
+2021-08-17 17:27:45,401:INFO:--> outputs_dir: /cache/train/output/2021-08-17_time_17_27_45
+2021-08-17 17:27:45,401:INFO:--> num_anchors_list: [4, 4]
+2021-08-17 17:27:45,401:INFO:--> logger: <LOGGER yolov3_face_detection (NOTSET)>
+2021-08-17 17:27:45,401:INFO:--> steps_per_epoch: 502500
+2021-08-17 17:27:45,401:INFO:
+2021-08-17 17:27:45,402:INFO:
+**********************************************************************
+**********************************************************************
+**
+**
+**        start create network
+**
+**
+**********************************************************************
+**********************************************************************
+2021-08-17 17:27:45,402:INFO:train opt momentum:0.5
+2021-08-17 17:27:45,402:INFO:real weight_decay:0.0
+2021-08-17 17:27:45,402:INFO:lr_scale:0.125
+real warmup_lr 6.25e-06
+real lr_rates [3.90625e-06, 7.8125e-06, 3.90625e-06, 1.5625e-06, 7.8125e-07, 3.90625e-07, 1.5625e-07, 7.8125e-08, 7.8125e-09]
+[EVENT] TDT(106,python):2021-08-17-17:38:42.352.019 [log.cpp:148][TsdClient] enter into open process logicDeviceId[0] rankSize[0],[tsd_client.cpp:906:Open]106
+[EVENT] TDT(106,python):2021-08-17-17:38:42.352.078 [log.cpp:148][TsdClient] start process through tsdaemon, begin check aicpu opkernel,[tsd_client.cpp:919:Open]106
+[EVENT] TDT(106,python):2021-08-17-17:38:42.404.812 [log.cpp:148][TsdClient][logicDeviceId_=0] check aicpu opkernel success,[tsd_client.cpp:924:Open]106
+[EVENT] TDT(106,python):2021-08-17-17:38:42.404.842 [log.cpp:148][TsdClient] logicDeviceId=0 enter into Open hccp and computer process,[tsd_client.cpp:608:TsdClientInit]106
+[EVENT] TDT(106,python):2021-08-17-17:38:42.410.722 [log.cpp:148]VersionVerify: send client version to server,[version_verify.cpp:38:SetVersionInfo]106
+[EVENT] TDT(106,python):2021-08-17-17:38:42.414.935 [log.cpp:148]VersionVerify: Check client version info, server[1230], client[1230],[version_verify.cpp:63:PeerVersionCheck]106
+[EVENT] TDT(106,python):2021-08-17-17:38:42.414.945 [log.cpp:148]VersionVerify: pass client version info success,[version_verify.cpp:84:ParseVersionInfo]106
+[EVENT] TDT(106,python):2021-08-17-17:38:42.414.950 [log.cpp:148]Service[2] create hdc success,[hdc_client.cpp:406:CheckHdcConnection]106
+[EVENT] TDT(106,python):2021-08-17-17:38:42.414.992 [log.cpp:148]VersionVerify: previous type[6], supported,[version_verify.cpp:106:SpecialFeatureCheck]106
+[EVENT] TDT(106,python):2021-08-17-17:38:42.415.062 [log.cpp:148][TsdClient][logicDeviceId_=0] [sessionId=1][rankSize=0]wait hccp and computer process start respond,[tsd_client.cpp:948:Open]106
+[EVENT] TDT(106,python):2021-08-17-17:38:44.152.342 [log.cpp:148][TsdClient][logicDeviceId_=0] [sessionId=1] start hccp and computer process success,[tsd_client.cpp:972:Open]106
+[EVENT] TDT(106,python):2021-08-17-17:38:44.169.786 [log.cpp:148]TdtHost[0] init begin,[tdt_host.cpp:163:Init]106
+[EVENT] TDT(106,python):2021-08-17-17:38:44.171.687 [log.cpp:148]TdtHost[0] init successfully.,[tdt_host.cpp:215:Init]106
+[EVENT] TDT(106,python):2021-08-17-17:38:45.171.861 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-17-17:38:46.172.019 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-17-17:38:47.172.197 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-17-17:38:48.172.356 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-17-17:38:49.172.516 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-17-17:38:50.172.691 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-17-17:38:51.172.843 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-17-17:38:52.173.066 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[ERROR] ME(106:281473637399120,MainProcess):2021-08-17-17:38:53.215.91 [mindspore/dataset/engine/datasets.py:2273] Uncaught exception: 
+Traceback (most recent call last):
+  File "/home/work/user-job-dir/code/train.py", line 217, in <module>
+    run_train()
+  File "/cache/user-job-dir/code/model_utils/moxing_adapter.py", line 105, in wrapped_func
+    run_func(*args, **kwargs)
+  File "/home/work/user-job-dir/code/train.py", line 163, in run_train
+    input_list.append(Tensor(data[idx], mstype.float32))
+IndexError: list index out of range
+[EVENT] TDT(106,python):2021-08-17-17:38:53.173.226 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-17-17:38:54.173.343 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-17-17:38:55.173.459 [log.cpp:148]"HostSendPool: {blockSize: 3072K, totalNum: 4, freeNum: 4}" "HostRecvPool: {blockSize: 3072K, totalNum: 1, freeNum: 1}" "DeviceRecvPool: " "HostCtrlPool: {SendPool: 4, FreePool: 4}, {RecvPool: 1, FreePool: 1}",[memory_pool.cpp:680:GetHostPoolStatus]145
+[EVENT] TDT(106,python):2021-08-17-17:38:56.041.013 [log.cpp:148]TdtHost[0] destroy begin,[tdt_host.cpp:460:Destroy]106
+[EVENT] TDT(106,python):2021-08-17-17:38:56.042.312 [log.cpp:148]TdtHost[0] exec destroy end.,[tdt_host.cpp:499:Destroy]106
+[EVENT] TDT(106,python):2021-08-17-17:38:56.056.335 [log.cpp:148][TsdClient] Close [logicDeviceId_=0][sessionId=1] hccp and computer enter,[tsd_client.cpp:1002:Close]106
+[EVENT] TDT(106,python):2021-08-17-17:38:56.056.379 [log.cpp:148]VersionVerify: previous type[7], supported,[version_verify.cpp:106:SpecialFeatureCheck]106
+[EVENT] TDT(106,python):2021-08-17-17:38:56.056.423 [log.cpp:148][TsdClient][logicDeviceId_=0] [sessionId=1] wait hccp and computer process close respond,[tsd_client.cpp:1008:Close]106
+[EVENT] TDT(106,python):2021-08-17-17:38:56.191.748 [log.cpp:148][TsdClient][logicDeviceId_=0]has recv close hccp and computer process respond,[tsd_client.cpp:1021:Close]106
+[EVENT] TDT(106,python):2021-08-17-17:38:56.191.821 [log.cpp:148][TsdClient][logicDeviceId_=0] [sessionId=1] close hccp and computer process success,[tsd_client.cpp:1034:Close]106
+[EVENT] IDEDH(106,python):2021-08-17-17:38:57.063.500 [adx_server_manager.cpp:27][tid:106]>>> start to deconstruct adx server manager
+[EVENT] IDEDH(106,python):2021-08-17-17:38:57.141.228 [adx_server_manager.cpp:27][tid:106]>>> start to deconstruct adx server manager
+[EVENT] IDEDH(106,python):2021-08-17-17:38:57.144.262 [adx_server_manager.cpp:27][tid:106]>>> start to deconstruct adx server manager
+[Modelarts Service Log]2021-08-17 17:38:57,991 - ERROR - proc-rank-0-device-0 (pid: 106) has exited with non-zero code: 1
+[Modelarts Service Log]2021-08-17 17:38:57,992 - INFO - Begin destroy training processes
+[Modelarts Service Log]2021-08-17 17:38:57,992 - INFO - proc-rank-0-device-0 (pid: 106) has exited
+[Modelarts Service Log]2021-08-17 17:38:57,992 - INFO - End destroy training processes
+[Modelarts Service Log]2021-08-17 17:38:58,016 - INFO - final upload stdout log done
+[ModelArts Service Log]modelarts-pipe: total length: 17052
+[Modelarts Service Log]Training end with return code: 1
+[Modelarts Service Log]upload ascend-log to s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/log/ascend-log/ at 2021-08-17-17:38:58
+upload_tail_log.py -l 2048 -o s3://yolov3-test2/train_out/MA-FaceDetection-08-12-16-14/log/ascend-log/
+list /home/work/ascend/log
+totally, 0 ascend log files to be uploaded
+INFO:root:No files to copy.
+[Modelarts Service Log]upload ascend-log end at 2021-08-17-17:38:58
+[Modelarts Service Log]Training end at 2021-08-17-17:38:58
+[Modelarts Service Log]Training completed.
