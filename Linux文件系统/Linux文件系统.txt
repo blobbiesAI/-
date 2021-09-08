@@ -1,0 +1,22 @@
+什么是文件系统 (filesystem) 呢？目前的操作系统大多数是将数据由硬盘读出来的， 那么每个操作系统
+使用的硬盘在 x86 架构上的，都一样啊！都是同样的硬盘。 但是，每种操作系统都有其独特的读取档案
+的方法，也就是说， 每种操作系统对硬盘读取的方法不同，所以就造就了不同的档案系统了。
+
+Linux 核心必须要能够认
+识某种档案系统后，我们的 Linux 才能读取该档案系统的数据内容啊！ 也就是说，你必须要将你所想要
+支持的档案系统编译到你的核心当中才能被支持 
+
+查看Linux核心支持的文件系统：/lib/modules/5.4.0-81-generic/kernel/fs$ ls
+
+ Linux 的 VFS (Virtual Filesystem Switch)： 
+了解了我们使用的档案系统之后，再来则是要提到，那么 Linux 的核心又是如何管理这些认识的档案系统
+呢？ 其实，整个 Linux 的系统都是透过一个名为 Virtual Filesystem Switch 的核心功能去读取 
+filesystem 的。 也就是说，整个 Linux 认识的 filesystem 其实都是 VFS 在进行管理， 我们使用者并
+不需要知道每个 partition 上头的 filesystem 是什么～ VFS 会主动的帮我们做好读取的动作呢～
+
+
+扇区大小，fdisk -l
+磁盘块大小，stat /boot
+内存页大小，getconf PAGE_SIZE
+
+

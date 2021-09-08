@@ -1,0 +1,48 @@
+
+下载项目     git clone git@192.168.2.104:luoxu/ec6828_v100.git
+
+显示当前配置 git config --list
+设置用户名称 git config --global user.name  user
+设置用户邮箱 git config --global user.email user@earlysci.com
+设置编辑工具 git config –global core.editor vim
+
+列出所有分支 git branch -a
+创建本地分支 git branch hotfix_user_for_xxxx
+切换当前分支 git checkout EC6828_V100R021_DEV
+创建然后切换 git checkout -b new_branch
+删除本地分支 git branch -d branch_to_delete
+删除代码库    rm -rf .git
+回退 git reset --hard/--soft/--mixed HEAD^
+HEAD^	上个commit节点
+HEAD^^	上上个节点
+HEAD^^^	上上上个节点
+
+下载远端分支到本地分支  git pull
+以下操作及其危险,会丢失最新的工作区内容:使用本地仓库覆盖当前目录
+git checkout .
+
+查看工作区和暂存区    git status
+添加工作区到暂存区    git add .		git会自己识别做过修改的文件，将其加入暂存区
+提交暂存区到仓库区    git commit --allow-empty
+(规范要求必须使用该命令提交代码,会自动进入log编辑界面)
+
+上传分支  git push
+上传分支  git remote prune origin hotfix_luoxu_for_
+
+保存现场  git stash
+查看现场  git stash list
+现场恢复  git stash pop
+删除现场  git stash drop
+版本回退  git reset --hard 2e70fdf
+
+查看历史标签 git tag
+创建新的标签 git tag tag_luoxu_v001
+删除指定标签 git tag -d tag_luoxu_v001
+
+查看最新变更 git show
+查看历史变更 git log
+详细历史变更 git log --stat
+历史命令查询 git relog
+
+远程分支信息在本地的残留信息清除
+git remote prune origin

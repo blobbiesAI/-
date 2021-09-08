@@ -1,0 +1,18 @@
+1.windows版git（进行Linux开发时，多在WSL或虚拟机中进行，不要安装windows版git，免得自己都乱了）
+2.WSL(ubuntu18.04)下的git
+
+3.vscode+WSL可以使用git，注意vscode内置对git的支持，本身没有git。所以在安装时需要检测电脑安装的git，而WSL是自带git软件的。
+3.1	git --version
+3.2	配置用户名和邮箱，在使用git commit提交版本库时需要。git config --global user.name blobbiesAI
+				    		       git config --global user.email blobbiesAI@icloud.com
+3.3	git config -l	查看当前仓库配置
+3.4	git config --global --unset user.name	删除某条配置
+
+4.本地与远程代码托管平台（如github）有两种互联方式
+4.1	http不需要做任何配置
+4.2	ssh需要公钥私钥
+	在本地电脑命令行输入ssh-keygen。在~/.ssh下出现id_rsa和id_rsa.pub两个文件分别存私钥和公钥；
+	将id_rsa.pub里的内容复制到github上setting里；
+	在本地电脑命令行输入ssh -T git@github.com验证；
+	在~/.ssh下出现known_hosts，存着与WSL进行ssh通信的主机信息（如github）；
+	Linux是在~/.ssh下，windows在C盘/用户/wxb12/.ssh下。
